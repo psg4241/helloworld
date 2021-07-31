@@ -1,0 +1,39 @@
+<html> 
+<head> 
+ <style> 
+body { 
+  background-color:skyblue; 
+  text-align: center;
+  border:solid;
+  border-radius: 4.5px;
+  border:auto;
+
+
+} 
+h1 { 
+  color: black; 
+  margin-left: 40px; 
+} 
+p { 
+  color: brown; 
+  size: 12px;
+  margin-left: 50px; 
+} 
+</style> 
+ <script> 
+         function multi(){ 
+               var num,i,m=""; 
+               num=Number(document.getElementById("n1").value);  
+               for(i=1; i <= 10; i++) 
+               m += num + " * " + i + " = " + num*i + "<br>";  
+               document.getElementById("table").innerHTML = m; 
+         } 
+</script> 
+</head> 
+<body> 
+ <h1><center>Multiplication Table</center></h1> 
+ <p><b>Enter number :</b> <input type="text" id="n1"><br></p> 
+ <button onclick="multi()">Multiplication Table</button> 
+ <p id="table"></p> 
+</body> 
+</html> 
